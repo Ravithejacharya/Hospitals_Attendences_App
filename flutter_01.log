@@ -1,0 +1,99 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+DartDevelopmentServiceException: DartDevelopmentServiceException: JSON-RPC error 100: Feature is disabled.
+
+```
+#0      DartDevelopmentServiceImpl._startDDSServer (package:dds/src/dds_impl.dart:213:7)
+<asynchronous suspension>
+#1      DartDevelopmentServiceImpl.startService (package:dds/src/dds_impl.dart:116:7)
+<asynchronous suspension>
+#2      DartDevelopmentService.startDartDevelopmentService (package:dds/dds.dart:97:5)
+<asynchronous suspension>
+#3      DebugService.startDartDevelopmentService (package:dwds/src/services/debug_service.dart:154:12)
+<asynchronous suspension>
+#4      DevHandler._createAppDebugServices (package:dwds/src/handlers/dev_handler.dart:466:7)
+<asynchronous suspension>
+#5      DevHandler.loadAppServices (package:dwds/src/handlers/dev_handler.dart:241:21)
+<asynchronous suspension>
+#6      Dwds.debugConnection (package:dwds/dart_web_debug_service.dart:61:30)
+<asynchronous suspension>
+#7      WebDevFS.connect.<anonymous closure> (package:flutter_tools/src/isolated/devfs_web.dart:713:15)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.7.3, on Microsoft Windows
+    [Version 10.0.19045.2604], locale en-US)
+    [32m•[39m Flutter version 3.7.3 on channel stable at
+      C:\Users\HP\Downloads\flutter_windows_3.7.3-stable\flutte
+      r
+    [32m•[39m Upstream repository
+      https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 9944297138 (7 weeks ago), 2023-02-08
+      15:46:04 -0800
+    [32m•[39m Engine revision 248290d6d5
+    [32m•[39m Dart version 2.19.2
+    [32m•[39m DevTools version 2.20.1
+
+[32m[✓][39m Windows Version (Installed version of Windows is version 10
+    or higher)
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android
+    SDK version 33.0.1)
+    [32m•[39m Android SDK at C:\Users\HP\AppData\Local\Android\Sdk
+    [32m•[39m Platform android-33, build-tools 33.0.1
+    [32m•[39m ANDROID_HOME = C:\Users\HP\AppData\Local\Android\Sdk
+    [32m•[39m Java binary at: C:\Program Files\Android\Android
+      Studio\jre\bin\java
+    [32m•[39m Java version OpenJDK Runtime Environment (build
+      11.0.13+0-b1751.21-8125866)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Chrome - develop for the web
+    [32m•[39m Chrome at C:\Program
+      Files\Google\Chrome\Application\chrome.exe
+
+[31m[✗][39m Visual Studio - develop for Windows
+    [31m✗[39m Visual Studio not installed; this is necessary for
+      Windows development.
+      Download at
+      https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++"
+      workload, including all of its default components
+
+[32m[✓][39m Android Studio (version 2021.3)
+    [32m•[39m Android Studio at C:\Program Files\Android\Android Studio
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version OpenJDK Runtime Environment (build
+      11.0.13+0-b1751.21-8125866)
+
+[32m[✓][39m VS Code (version 1.76.2)
+    [32m•[39m VS Code at C:\Users\HP\AppData\Local\Programs\Microsoft
+      VS Code
+    [32m•[39m Flutter extension version 3.60.0
+
+[32m[✓][39m Connected device (3 available)
+    [32m•[39m Windows (desktop) • windows • windows-x64    • Microsoft
+      Windows [Version 10.0.19045.2604]
+    [32m•[39m Chrome (web)      • chrome  • web-javascript • Google
+      Chrome 111.0.5563.146
+    [32m•[39m Edge (web)        • edge    • web-javascript • Microsoft
+      Edge 111.0.1661.54
+
+[32m[✓][39m HTTP Host Availability
+    [32m•[39m All required HTTP hosts are available
+
+[33m![39m Doctor found issues in 1 category.
+```
