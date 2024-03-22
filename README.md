@@ -1,6 +1,7 @@
 # app
 
-A new Flutter project.
+
+Hospitals_Attendances_App: Simplifying healthcare access with appointment scheduling, real-time updates, and telemedicine options for efficient and convenient care.
 
 ## Getting Started
 
